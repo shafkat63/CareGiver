@@ -1,0 +1,176 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h5 {
+    color: #1d3557;
+}
+
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/hero-image.jpg') center center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 5px solid #2a9d8f;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #264653;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #264653;
+}
+
+.btn-primary {
+    background-color: #e76f51;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2a9d8f !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #264653 !important;
+}
+
+.nav-link:hover {
+    color: #e76f51 !important;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2a9d8f;
+}
+
+.section-icon {
+    font-size: 2rem;
+    color: #e76f51;
+}
+
+.service-card,
+.testimonial-card,
+.project-card,
+.card {
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover,
+.project-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    border-radius: 12px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #e76f51;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #e76f51;
+}
+
+hr {
+    border-color: #e76f51;
+    height: 2px;
+    width: 60px;
+    margin: 10px auto;
+}
+
+.btn-outline-light {
+    border-radius: 50px;
+    border-color: #2a9d8f;
+    color: #2a9d8f;
+}
+
+.btn-outline-light:hover {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Scale up slightly on hover */
+    transition: transform 0.3s;
+    /* Smooth transition */
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    font-size: 1.1rem;
+    /* Slightly larger text */
+}
+
+.card-text i {
+    color: #007bff;
+    /* Change icon color */
+    margin-right: 8px;
+    /* Space between icon and text */
+}

@@ -11,184 +11,8 @@
     <!-- FontAwesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
-            color: #2f2f2f;
-            line-height: 1.6;
-        }
+    <link rel="stylesheet" href="{{ asset('assets/css/welcome.css') }}" />
 
-        h1,
-        h2,
-        h5 {
-            color: #1d3557;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/hero-image.jpg') center center/cover no-repeat;
-            padding: 100px 20px;
-            text-align: center;
-            border-bottom: 5px solid #2a9d8f;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            color: #264653;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            color: #264653;
-        }
-
-        .btn-primary {
-            background-color: #e76f51;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 50px;
-        }
-
-        .navbar {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2a9d8f !important;
-        }
-
-        .nav-link {
-            font-size: 1.1rem;
-            color: #264653 !important;
-        }
-
-        .nav-link:hover {
-            color: #e76f51 !important;
-        }
-
-        .section {
-            padding: 60px 0;
-        }
-
-        .section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #2a9d8f;
-        }
-
-        .section-icon {
-            font-size: 2rem;
-            color: #e76f51;
-        }
-
-        .service-card,
-        .testimonial-card,
-        .project-card,
-        .card {
-            border: none;
-            background: #ffffff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover,
-        .project-card:hover,
-        .testimonial-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .project-img {
-            border-radius: 12px;
-            max-height: 250px;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #264653;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-
-        .contact-info i {
-            margin-right: 8px;
-            color: #e76f51;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li i {
-            margin-right: 10px;
-            color: #e76f51;
-        }
-
-        hr {
-            border-color: #e76f51;
-            height: 2px;
-            width: 60px;
-            margin: 10px auto;
-        }
-
-        .btn-outline-light {
-            border-radius: 50px;
-            border-color: #2a9d8f;
-            color: #2a9d8f;
-        }
-
-        .btn-outline-light:hover {
-            background-color: #2a9d8f;
-            color: white;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            /* Scale up slightly on hover */
-            transition: transform 0.3s;
-            /* Smooth transition */
-        }
-
-
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .hover-shadow:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-text {
-            font-size: 1.1rem;
-            /* Slightly larger text */
-        }
-
-        .card-text i {
-            color: #007bff;
-            /* Change icon color */
-            margin-right: 8px;
-            /* Space between icon and text */
-        }
-    </style>
 </head>
 
 <body>
@@ -272,49 +96,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-
-    <!-- Service List Section -->
-    <div class="container section">
-        <h2 class="d-flex justify-content-center mb-4 gap-2"><i class="fas fa-user-check"></i> Service List</h2>
-        <div class="row gap-4 d-flex justify-content-center">
-
-            <!-- Card for Food & Medical Care -->
-            <div class="col-md-3 service-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-briefcase-medical section-icon"></i> Food & Medical Care
-                        </h5>
-                        <p class="card-text">Social and physical assessments</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card for Access to Essential Services -->
-            <div class="col-md-3 service-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-briefcase-medical section-icon"></i> Food & Medical Care
-                        </h5>
-                        <p class="card-text">We ensure access to essential food, medical care, and related services.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card for Food & Medical Care (Duplicate) -->
-            <div class="col-md-3 service-card">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fas fa-briefcase-medical section-icon"></i> Food & Medical Care
-                        </h5>
-                        <p class="card-text">We ensure access to essential food, medical care, and related services.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Service Cards -->
             <div class="col-lg-3 col-md-6 service-card">
                 <div class="card">
                     <div class="card-body">
@@ -361,10 +143,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
+
+
 
 
 
@@ -405,10 +187,12 @@
 
 
 
-    <div class="container" id="facilities">
+    <div class="container section" id="facilities">
         <div class="row text-center">
             <div class="col-12">
-                <h1 class="display-4">FACILITIES</h1>
+                <h2 class="d-flex justify-content-center mb-4 gap-2"><i
+                        class="fas fa-hand-holding-heart section-icon"></i> FACILITIES</h2>
+
                 <hr class="mx-auto" style="border-color:#000000; width:100%; max-width:170px; height: 1px;">
             </div>
         </div>
@@ -420,7 +204,7 @@
                     <div class="card-body">
                         <div class="icon mb-3"
                             style="background-color: rgba(255,235,59,0.58); width: 80px; height: 80px; display: inline-flex; justify-content: center; align-items: center; border-radius: 50%;">
-                            <i class="fas fa-apple-alt text-success" style="font-size: 40px;"></i>
+                            <i class="fas fa-apple-alt text-success " style="font-size: 40px;"></i>
                         </div>
                         <h2 class="h5 mt-3">Fresh Farming</h2>
                         <p>We provide our members with residue-free, fresh agricultural products to ensure their good
@@ -644,7 +428,7 @@
     <div class="container section" id="contact">
         <h2 class="text-center"><i class="fas fa-envelope section-icon"></i> Contact Us</h2>
         <p class="text-center">Have questions or need assistance? Reach out to us:</p>
-        
+
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center border-0 shadow-sm">
@@ -654,7 +438,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center border-0 shadow-sm">
                     <div class="card-body">
@@ -663,7 +447,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center border-0 shadow-sm">
                     <div class="card-body">
@@ -674,7 +458,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card text-center border-0 shadow-sm">
                     <div class="card-body">
@@ -687,7 +471,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- Footer -->
     <footer>
